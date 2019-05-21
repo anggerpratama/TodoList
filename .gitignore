@@ -1,0 +1,8 @@
+# Node modules
+node_modules
+.idea
+# Environment variables, never commit this file
+.env
+
+# Environment variables, never commit this file
+dist
