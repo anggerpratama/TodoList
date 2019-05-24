@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsc && node dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc --watch & nodemon dist"
+    "dev": "tsc --watch",
+    "serve" : "nodemon dist"
   },
   "author": "Angger",
   "license": "ISC",
@@ -22,9 +23,11 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "class-validator": "^0.9.1",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
+    "express-validator": "^5.3.1",
     "mongoose": "^5.5.10"
   }
 }

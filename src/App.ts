@@ -3,10 +3,10 @@ import bodyParser from 'body-parser'
 import dbProviders from './app/providers/DatabaseProviders'
 import * as path from 'path'
 import cookieParser from 'cookie-parser'
+import expressValidator from 'express-validator'
 
 //routers
 import apiRouter from './routes/api'
-// import bodyParser = require('body-parser');
 
 class App {
 
@@ -17,7 +17,7 @@ class App {
         this.express = express()
         this.middleware()
         this.mountRequest()
-        
+
         //load providers
         dbProviders
 
@@ -30,6 +30,7 @@ class App {
     }
 
     private middleware() : void {
+        this.express.use(expressValidator())
         this.express.use(bodyParser.json())
         this.express.use(bodyParser.urlencoded({ extended:false }))
 

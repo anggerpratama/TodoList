@@ -13,9 +13,10 @@ export interface ITodo {
 export interface IUser {
 
     _id: any;
-    title: String;
-    description?: String;
-    due_at: Date;
+    firstname: string;
+    lastname: string;
+    email: string;
+    phone: string;
     created_at: Date;
 
 }
