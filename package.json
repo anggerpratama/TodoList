@@ -28,6 +28,6 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "express-validator": "^5.3.1",
-    "mongoose": "^5.5.10"
+    "mongoose": "^5.7.5"
   }
 }
